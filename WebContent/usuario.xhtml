@@ -10,14 +10,14 @@
 	<h1>===========Cadastro de Usuário============</h1>
 	<h:form>
 		<h:panelGrid columns="2">
-			<h:outputLabel value ="Nome de Usuário: ">
-			<h:inputText value="#{usuarioController.nome}"/>
+			<h:outputLabel value ="Nome de Usuário: "/>
+			<h:inputText value="#{usuarioController.usuario.nome}"/>
 			<h:outputLabel value="Login: "/>
-			<h:inputSecret value="#{usuarioController.login}"/>
+			<h:inputSecret value="#{usuarioController.usuario.login}"/>
 			<h:outputLabel value="Senha: "/>
-			<h:inputSecret value="#{usuarioController.senha}"/>
+			<h:inputSecret value="#{usuarioController.usuario.senha}"/>
 			<h:outputLabel value="E-mail: "/>
-			<h:inputSecret value="#{usuarioController.email}"/>
+			<h:inputSecret value="#{usuarioController.usuario.email}"/>
 		</h:panelGrid>
 			<h:commandButton value="Incluir" action="#{usuarioController.incluir}"/>
 			<h:commandButton value="Alterar" actionListener="#{usuarioController.alterar}"/>

@@ -9,52 +9,25 @@ import javax.inject.Named;
 @ViewScoped
 public class UsuarioController implements Serializable {
 	
-	
-	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 6735972047454490532L;
 	
-	private String nome;
-	private String email;
-	private String senha;
-	private String login;
-		
-	
-	
-	public void login() {
-		
-	}
-	public void excluir() {
-		
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getSenha() {
-		return senha;
-	}
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-	public String getLogin() {
-		return login;
-	}
-	public void setLogin(String login) {
-		this.login = login;
-	}
-	
-	
+	private Usuario usuario;
 
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+		
+	}
+	
+	public void incluir() {
+		System.out.println(getUsuario().getNome());
+	}
+	
+	
 }
