@@ -11,11 +11,24 @@ public class UsuarioController implements Serializable {
 	
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6735972047454490532L;
+	
 	private String nome;
 	private String email;
 	private String senha;
 	private String login;
+		
 	
+	
+	public void login() {
+		
+	}
+	public void excluir() {
+		
+	}
 	
 	public String getNome() {
 		return nome;
